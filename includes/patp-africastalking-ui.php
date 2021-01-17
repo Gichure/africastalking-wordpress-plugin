@@ -101,7 +101,7 @@ function wporg_usermeta_form_field_phone_number( $user )
                        title="Enter your phone number in international format."
                        required>
                 <p class="description">
-                    Please enter your phone number.
+                    Enter your phone number in international format. e.g +254723461337
                 </p>
             </td>
         </tr>

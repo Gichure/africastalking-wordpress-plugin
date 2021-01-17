@@ -45,5 +45,4 @@ add_action(
     'edit_user_profile_update',
     'wporg_usermeta_form_field_phone_number'
     );
-
 ?>
