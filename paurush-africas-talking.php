@@ -1,7 +1,5 @@
 <?php
     
-    
-    
     /**
      * Plugin Name: Paurush AfricasTalking Gateway
      * Plugin URI: http://www.gichure.me.ke/paurush-sms-marketter-plugin
@@ -25,5 +23,5 @@
      along with {Plugin Name}. If not, see {URI to Plugin License}.
      */
     require_once plugin_dir_path(__FILE__) . 'includes/patp-functions.php';
-
+    
 ?>

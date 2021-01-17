@@ -1,7 +1,4 @@
 <?php
-
-namespace AfricasTalkingGateway;
-
 /*
 
 # COPYRIGHT (C) 2014 AFRICASTALKING LTD <www.africastalking.com>
@@ -18,10 +15,11 @@ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
 
-class AfricasTalkingGatewayException extends \Exception{}
+class AfricasTalkingGatewayException extends \Exception{
+    
+}
 
-class AfricasTalkingGateway
-{
+class AfricasTalkingGateway{
     protected $_username;
     protected $_apiKey;
     
@@ -44,8 +42,7 @@ class AfricasTalkingGateway
     const HTTP_CODE_OK      = 200;
     const HTTP_CODE_CREATED = 201;
     
-    public function __construct($username_, $apiKey_)
-    {
+    public function __construct($username_, $apiKey_){
         $this->_username    = $username_;
         $this->_apiKey      = $apiKey_;
         

@@ -1,8 +1,10 @@
 <?php 
+
     global $patp_db_version;
     $patp_db_version = '1.0';
     
-    include 'patp-africastalking-ui.php';
+    include_once 'patp-africastalking-ui.php';
+    include_once 'patp-africastalking-wrapper.php';
     
     /*
      * Add AfricasTalking Settings menu to the Admin Control Panel
@@ -54,17 +56,17 @@
     
     // Add a new top level menu link to the ACP
     function patp_add_africastalking_settings_link(){
+        
         $page_title = 'Paurush AfricasTalking Settings';
         $menu_title = 'PAT Settings';
-        $directory_menu_title = 'Directory';
+        $test_settings_menu_title = 'Send Message';
         $capability = 'manage_options';
         $menu_slug = 'patp-africastalking-settings';
-        $directory_menu_slug = 'patp-directory';
+        $test_settings_menu_slug = 'patp-test-settings';
         $function = 'patp_africastalking_settings';
-        $directory_menu_function = 'patp_show_directory';
+        $test_settings_menu_function = 'patp_show_test_settings';
         add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function);
-        add_submenu_page($menu_slug, $page_title, $directory_menu_title, $capability, $directory_menu_slug, $directory_menu_function);
-        add_options_page(__('Test Settings','menu-test'), __('Test Settings','menu-test'), 'manage_options', 'testsettings', 'mt_settings_page');
+        add_submenu_page($menu_slug, $page_title, $test_settings_menu_title, $capability, $test_settings_menu_slug, $test_settings_menu_function);
     }
     
 ?>
