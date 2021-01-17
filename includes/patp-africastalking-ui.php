@@ -81,4 +81,32 @@ function patp_show_test_settings(){
 </div>
 <?php 
 }
+
+
+function wporg_usermeta_form_field_phone_number( $user )
+{
+    ?>
+    <h3>Phone Number</h3>
+    <table class="form-table">
+        <tr>
+            <th>
+                <label for="phone_number">Phone Number</label>
+            </th>
+            <td>
+                <input type="text"
+                       class="regular-text ltr"
+                       id="phone_number"
+                       name="phone_number"
+                       value="<?= esc_attr( get_user_meta( $user->ID, 'phone_number', true ) ) ?>"
+                       title="Enter your phone number in international format."
+                       required>
+                <p class="description">
+                    Please enter your phone number.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <?php
+}
+
 ?>

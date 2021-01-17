@@ -4,7 +4,7 @@
     $patp_db_version = '1.0';
     
     include_once 'patp-africastalking-ui.php';
-    include_once 'patp-africastalking-wrapper.php';
+    include_once 'patp-user-details.php';
     
     /*
      * Add AfricasTalking Settings menu to the Admin Control Panel
